@@ -110,6 +110,7 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Summer 2017, Summer 2018</span>
                         <div padding="100"> </div>
+                            <p> </p>
                         <div class="flex-shrink-0"><span class="d-none d-lg-block"><img class="w3-round" with="200" height="200" src="assets/img/xaptum.png" class="padding" alt="" /></span></div>
                         </div>
                     </div>
@@ -145,44 +146,6 @@
                     
                 </div>
                   
-                <div class="col-xs-12 col-sm-8 col-md-9 content-column">
-                    {{ partial "mobile_nav_toggle.html" . }}
-                    <div class="grid">
-                        <div class="row">
-                          {{ range .Data.Pages }}
-                              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                                  <div class="box-masonry">
-                                      {{ if and (isset .Params "image") .Params.image }}
-                                        {{ if eq .Params.showonlyimage true }}
-                                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
-                                        {{ else }}
-                                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
-                                        {{ end }}
-                                            <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
-                                        </a>
-                                      {{ end }}
-                                      {{ if eq .Params.showonlyimage true }}
-                                        <div class="box-masonry-hover-text-header">
-                                      {{ else }}
-                                      <div class="box-masonry-text">
-                                      {{ end }}
-                                          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                                          <div class="box-masonry-description">
-                                            <p>
-                                                {{ if .Description }}
-                                                  {{ .Description }}
-                                                {{ else }}
-                                                  {{ .Summary }}
-                                                {{ end }}
-                                            </p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          {{ end }}
-                        </div>
-                    </div>
-                </div>
             </section>
             <hr class="m-0" />
             <!-- Interests-->
@@ -201,7 +164,7 @@
                         
                         <div class="flex-shrink-0">
                         <div padding="100"> </div>
-                        <div class="flex-shrink-0"><span class="d-none d-lg-block"><img class="w3-round" with="200" height="200" src="assets/img/xaptum.png" class="padding" alt="" /></span></div>
+                        <div class="flex-shrink-0"><span class="d-none d-lg-block"><img class="w3-round" with="200" height="200" src="assets/img/guga.JPG" class="padding" alt="" /></span></div>
                         </div>
                     </div>
                     
