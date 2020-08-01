@@ -45,9 +45,10 @@
                     </h1>
                     <div class="subheading mb-5">
                         (630) 854-5507 ·
-                        <a href="mailto:name@email.com">talksomala@gmail.com</a>
+                        <a href="mailto:talksomala@gmail.com">talksomala@gmail.com</a>
                     </div>
                     <p class="lead mb-5">I am a recent Economics graduate with minors in Statistics and Philosophy from Macalester College in the Twin Cities interested in utilizing data to help drive insights and decisions. </p>
+                    <span class="d-none d-lg-block"><img class="w3-round" src="assets/img/profile.jpg" alt="" /></span>
                     <div class="social-icons">
                         <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
@@ -136,52 +137,55 @@
                     
                     
                 </div>
+                  
                 <div class="col-xs-12 col-sm-8 col-md-9 content-column">
                     {{ partial "mobile_nav_toggle.html" . }}
                     <div class="grid">
                         <div class="row">
-                            {{ range .Data.Pages }}
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
-                                    <div class="box-masonry">
-                                        {{ if and (isset .Params "image") .Params.image }}
-                                            {{ if eq .Params.showonlyimage true }}
-                                            <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
-                                            {{ else }}
-                                            <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
-                                            {{ end }}
-                                                <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
-                                            </a>
-                                            {{ end }}
-                                            {{ if eq .Params.showonlyimage true }}
-                                            <div class="box-masonry-hover-text-header">
-                                            {{ else }}
-                                            <div class="box-masonry-text">
-                                            {{ end }}
-                                                <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-                                                <div class="box-masonry-description">
-                                                    <p>
-                                                        {{ if .Description }}
-                                                            {{ .Description }}
-                                                        {{ else }}
-                                                            {{ .Summary }}
-                                                        {{ end }}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                {{ end }}
-                            </div>
+                          {{ range .Data.Pages }}
+                              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item">
+                                  <div class="box-masonry">
+                                      {{ if and (isset .Params "image") .Params.image }}
+                                        {{ if eq .Params.showonlyimage true }}
+                                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
+                                        {{ else }}
+                                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+                                        {{ end }}
+                                            <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
+                                        </a>
+                                      {{ end }}
+                                      {{ if eq .Params.showonlyimage true }}
+                                        <div class="box-masonry-hover-text-header">
+                                      {{ else }}
+                                      <div class="box-masonry-text">
+                                      {{ end }}
+                                          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                                          <div class="box-masonry-description">
+                                            <p>
+                                                {{ if .Description }}
+                                                  {{ .Description }}
+                                                {{ else }}
+                                                  {{ .Summary }}
+                                                {{ end }}
+                                            </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          {{ end }}
                         </div>
                     </div>
+                </div>
             </section>
             <hr class="m-0" />
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                    <p>I enjoy playing basketball and soccer. My stepback three isn't too bad so I'd watch out. This past year, I created and hosted a radio show aimed at sharing and educating listeners on music from different cultures. Every week, an international student from our school would join the show and showcase music from their culture, explain the role music plays, and share personal stories. </p>
+                        
+                    <p class="mb-0">I'm currently working on a short video documentary project about Artists working in Guga S'thebe, an Arts and Cultural center in the Langa Township, South Africa. The documentary is aimed at capturing the artist's vision, motivation, perspective, and how the space/art has empowered them. Some topics include life post-apartheid, the continued lack of economic freedom for black and colored peoples in South Africa, the meaning of their art, and the how the space is being used to give back to the community. </p>
+
                 </div>
             </section>
             <hr class="m-0" />
