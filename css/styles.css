@@ -16,7 +16,7 @@
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #dc3545;
-  --orange: #bd5d38;
+  --orange: #6f42c1;
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #20c997;
@@ -159,12 +159,12 @@ sup {
 }
 
 a {
-  color: #b57edc;
+  color: #bd5d38;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #734f96;
+  color: #824027;
   text-decoration: underline;
 }
 
