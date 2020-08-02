@@ -10144,22 +10144,26 @@ section.resume-section .resume-section-content {
 .vkcontainer { 
     max-width: 1200px; 
     margin: auto; 
+    width: 100%;
 } 
 
 
 /* row and column decoration */
 .vkrow { 
-    margin: 0px -18px; 
-    padding: 8px; 
+    margin: 0px -18px;
+    padding: 10px;
+    width: 1000px;
 } 
 
 .vkrow > .vkcolumn { 
-    padding: 6px; 
+    padding: 40px; 
 } 
 
 .vkcolumn { 
     float: left; 
-    width: 25%; 
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 10px;
 } 
 
 .vkrow:after { 
@@ -10172,7 +10176,9 @@ section.resume-section .resume-section-content {
 .vkcontent { 
     background-color: white; 
     padding: 10px; 
-    border: 1px solid gray; 
+    border: 2px solid;
+    border-color: #824027;
+
 } 
 
 /* window size 850 width set */
