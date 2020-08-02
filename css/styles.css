@@ -10154,13 +10154,12 @@ section.resume-section .resume-section-content {
     padding: 10px;
     display: flex;
     flex-direction: row;
-    width: 1000px;
     flex-wrap: wrap;
     align-content: flex-start;
 } 
 
 .vkrow > .vkcolumn { 
-    padding: 40px; 
+    padding: 10px; 
 } 
 
 .vkcolumn { 
