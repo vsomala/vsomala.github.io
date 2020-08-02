@@ -10141,10 +10141,10 @@ section.resume-section .resume-section-content {
 
 
 /* styling body */
-.vkcontainer { 
-    max-width: 1200px; 
+.vkcontainer {  
     margin: auto; 
     width: 100%;
+    height: 40%;
 } 
 
 
