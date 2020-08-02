@@ -10133,3 +10133,58 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+      
+
+
+
+
+
+/* styling body */
+.vkcontainer { 
+    max-width: 1200px; 
+    margin: auto; 
+} 
+
+
+/* row and column decoration */
+.vkrow { 
+    margin: 0px -18px; 
+    padding: 8px; 
+} 
+
+.vkrow > .vkcolumn { 
+    padding: 6px; 
+} 
+
+.vkcolumn { 
+    float: left; 
+    width: 25%; 
+} 
+
+.vkrow:after { 
+    content: ""; 
+    display: table; 
+    clear: both; 
+} 
+
+/* content decoration */
+.vkcontent { 
+    background-color: white; 
+    padding: 10px; 
+    border: 1px solid gray; 
+} 
+
+/* window size 850 width set */
+@media screen and (max-width: 850px) { 
+    .vkcolumn { 
+        width: 50%; 
+    } 
+} 
+
+/* window size 400 width set */
+@media screen and (max-width: 400px) { 
+    .vkcolumn { 
+        width: 100%; 
+    } 
+} 
